@@ -56,7 +56,7 @@ Embeddings: The embeddings of the question and answer choices.
 ### Data Format
 
 The dataset can be found in the file named example.jsonl, which contains one json object in each line. The format of the json object is as follows:
-```json
+```
 {
 	"question": typeof(string),
 	"answers": typeoof(list_of_strings),
@@ -76,7 +76,7 @@ We will release the full dataset soon.
 
 ### Example
 The following is an example instance from our XplainLLM dataset:
-```json
+```
 {
 	"question": "The people danced to the music, what was the music like for them?",
 	"answers": ["soothing","vocal or instrumental","loud","universal","enjoyable"],
@@ -88,7 +88,7 @@ The following is an example instance from our XplainLLM dataset:
 	"explanation_why": "Since the words "play_mozart" and "listening_to_classical_music" suggest that the music was likely of high quality and enjoyable to listen to, and since the words "together" and "dancefest" suggest that the people were likely in a social and festive setting, the model predicts that the music was enjoyable for them. Therefore, the predicted option is "enjoyable".",
 	"explanation_why_not": 	"The other potential choices can be combined into three categories: 1) "soothing" and "vocal or instrumental" do not match with the festive and social setting suggested by the words "together" and "dancefest"; 2) "loud" is not necessarily correlated with enjoyment and could be unpleasant for some people; 3) "universal" does not give any indication of the quality or character of the music, and is therefore too vague to be a valid choice.",
     "debugger_score": "Faithfulness: 4, Completeness: 3, Accuracy: 4",
-    "embeddings:" {[[0.1, 0.2, ..., 0.3], [0.1, 0.2, ..., 0.3], ...]}
+    "embeddings:" {[[0.1, 0.2, ..., 0.3], [0.1, 0.2, ..., 0.3], [...]}
 }
 ```
 
